@@ -49,11 +49,27 @@
         </select>
       </div>
       <div class="button">
-      <button id="ingresar">
+        <button
+        id="ingresar"
+        onclick="
+let numero1 = document.querySelector('#opcion1').value;
+let numero2 = document.querySelector('#opcion2').value;
+let numero3 = document.querySelector('#opcion3').value;
+
+let clave = numero1 + numero2 + numero3;
+
+if (clave === '911') {
+mensaje.innerHTML = 'El password 1 es correcto!';
+} else if ( clave === '714') {
+mensaje.innerHTML = 'El password 2 es correcto!';
+} else {
+  mensaje.innerHTML = 'El password es incorrecto, intenta nuevamente!';
+} "
+      >
         Ingresar
       </button>
     </div>
-      <p id="mensaje">Resultado</p>
+    <p id="mensaje">Resultado</p>
     </div>
     
     <div class="links">
