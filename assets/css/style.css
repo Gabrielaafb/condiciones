@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.bienvenida {
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+   }
+   #miImagen {
+    cursor: pointer;
+    transition: border 0.3s ease;
+}
+
+.borde {
+    border: 5px solid red; 
+}
+
+.boton{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:black;
+}
+h2 {
+    margin-bottom: 5vh;
+    font-family: "Playwrite IS", cursive;
+    color: rgba(10, 10, 10, 0.973); 
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+}
+#sig {
+    color: blue;
+    font-size: 20px;
+}
+
+

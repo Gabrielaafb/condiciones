@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos Mágicos</title>
+    <script src="https://kit.fontawesome.com/4e2ed3971d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IS&display=swap" rel="stylesheet">
+  </head>
+<body>
+   <div class="text">
+    <h1>LLeva tus objetos mágicos</h1>
+   </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="row">
+        <div class="col">
+          <div class="card h-50">
+            <img src="./assets/img/diadema.jpg" class="card-img-top" alt="diadema">
+            <div class="card-body">
+              <h5 class="card-title">Diadema Rowena Ravenclaw</h5>
+            </div>
+            <input id="sticker1" value="" type="number" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-50">
+            <img src="./assets/img/giratiempo.jpg" class="card-img-top" alt="Giratiempo">
+            <div class="card-body">
+              <h5 class="card-title">Giratiempo</h5>
+            </div>
+            <input id="sticker2" value="" type="number" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-50">
+            <img src="./assets/img/mapa.jpg" class="card-img-top" alt="mapa">
+            <div class="card-body">
+              <h5 class="card-title">Mapa del merodeador</h5>
+            </div>
+            <input id="sticker3" value="" type="number" />
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <p id="mensaje"></p>
+      <button type="button" class="btn btn-primary"id="verificar"
+        onclick="
+          let sticker1 = Number(document.querySelector('#sticker1').value);
+          let sticker2 = Number(document.querySelector('#sticker2').value);
+          let sticker3 = Number(document.querySelector('#sticker3').value);
+
+          let suma = sticker1 + sticker2 + sticker3;
+
+          if (suma <= 10){
+           mensaje.innerHTML = 'Has añadido ' + suma + ' stickers!'
+           mensaje.style.color = 'green';
+          } else {
+            mensaje.innerHTML = 'Te has excedido en los stickers!'
+            mensaje.style.color = 'red';
+          }"
+        >Verificar</button>
+      </div>
+      <div class="links">
+      <a href="./index.html" id="sig"> <i class="fa-solid fa-arrow-left"></i> Anterior &nbsp</a>
+      <a href="./index3.html" id="sig"> Siguiente <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <script src="./assets/js/javascript2.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
